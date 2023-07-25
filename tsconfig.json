@@ -27,5 +27,5 @@
     "moduleResolution": "node"
   },
   "exclude": ["node_modules"],
-  "include": ["/**/*.ts"]
+  "include": ["/**/*.ts", "__test__/algorithms/doubleLinkedList.test.ts"]
 }
