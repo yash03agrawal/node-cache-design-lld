@@ -20,7 +20,7 @@ export default class HashMapStorage<TKey, TValue> implements IStorage<TKey, TVal
     if (this.map.has(key)) {
       return this.map.get(key);
     } else {
-      throw Error('key not found');
+      throw new Error('key not found');
     }
   };
 
