@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 const cacheRouter = express.Router();
 
-const cacheFactory = new CacheFactory<number, string>();
+const cacheFactory = new CacheFactory<number, number>();
 const myCache = cacheFactory.defaultCache(5);
 
 cacheRouter.put('/value', async (req, res, next) => {
@@ -38,6 +38,4 @@ app.use('/cache-service', cacheRouter);
 
 app.use(ErrorHandler);
 
-app.listen(3000, () => {
-  console.log('server started...');
-});
+export default app;
