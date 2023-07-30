@@ -2,7 +2,8 @@
 
 Run npm init to install dependencies and then npm start to start the server.  
 Use npm test to run tests.  
-Use npm test -t '{describeString} {itString}' to run specific test.
+Use npm test -t '{describeString} {itString}' to run specific test.  
+Use npm test -- --coverage to get test coverage report.
 
 ## This is inspired from:
 
